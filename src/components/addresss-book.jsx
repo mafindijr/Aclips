@@ -47,9 +47,22 @@ const CryptoAddressBook = () => {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem('isAuthenticated'); // Clear isAuthenticated
+    navigate('/login'); // Redirect to login page
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-10">
-      <h1 className="text-2xl md:text-3xl font-bold mb-4 text-center">Crypto Address Book</h1>
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-2xl md:text-3xl font-bold">Crypto Address Book</h1>
+        <button
+          onClick={handleLogout}
+          className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+        >
+          Logout
+        </button>
+      </div>
       <button
         onClick={() => navigate('/add-address')}
         className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 flex items-center mx-auto"

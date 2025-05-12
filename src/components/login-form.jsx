@@ -3,23 +3,12 @@ import { useNavigate } from 'react-router-dom';
 function LoginForm() {
   const navigate = useNavigate();
 
-  const handleGoogleSignIn = () => {
-    // Add Google Sign-In logic here
-    alert('Google Sign-In clicked!');
-    navigate('/'); // Navigate to the dashboard after successful login
-  };
-
-  const handleWalletConnect = () => {
-    // Add Wallet Connect logic here
-    alert('Wallet Connect clicked!');
-    navigate('/'); // Navigate to the dashboard after successful login
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add login logic here
+    // Simulate successful login
+    localStorage.setItem('isAuthenticated', 'true'); // Set isAuthenticated in localStorage
     alert('Login successful!');
-    navigate('/'); // Navigate to the dashboard after successful login
+    navigate('/'); // Navigate to the dashboard
   };
 
   return (
@@ -58,26 +47,10 @@ function LoginForm() {
         </button>
         <button
           type="button"
-          onClick={() => navigate('/signup')}
+          onClick={() => navigate('/signup')} // Navigate to the Sign Up page
           className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
         >
           Sign Up
-        </button>
-      </div>
-      <div className="flex flex-col space-y-2">
-        <button
-          type="button"
-          onClick={handleGoogleSignIn}
-          className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-        >
-          Sign in with Google
-        </button>
-        <button
-          type="button"
-          onClick={handleWalletConnect}
-          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
-        >
-          Connect Wallet
         </button>
       </div>
     </form>

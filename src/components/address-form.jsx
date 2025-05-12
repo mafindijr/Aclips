@@ -9,7 +9,7 @@ function AddressForm({ addAddress }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name && address) {
-      addAddress({ name, address });
+      addAddress({ name, address }); // Call the addAddress function passed as a prop
       setName('');
       setAddress('');
       navigate('/'); // Navigate back to the dashboard after submission
@@ -54,7 +54,7 @@ function AddressForm({ addAddress }) {
         </button>
         <button
           type="button"
-          onClick={() => navigate('/')} // Navigate back to the dashboard
+          onClick={() => navigate('/')}
           className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
         >
           Cancel

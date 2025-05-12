@@ -9,6 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* Protected Route for Dashboard */}
         <Route
           path="/"
           element={
@@ -17,19 +18,33 @@ function App() {
             </ProtectedRoute>
           }
         />
+        {/* Protected Route for Add Address Form */}
         <Route
           path="/add-address"
           element={
             <ProtectedRoute>
-              <AddressForm />
+              <AddressFormWrapper />
             </ProtectedRoute>
           }
         />
+        {/* Public Route for Login */}
         <Route path="/login" element={<LoginForm />} />
+        {/* Public Route for Sign Up */}
         <Route path="/signup" element={<SignUpForm />} />
       </Routes>
     </Router>
   );
+}
+
+// Wrapper to pass the addAddress function to AddressForm
+function AddressFormWrapper() {
+  const addAddress = (newAddress) => {
+    const storedAddresses = JSON.parse(localStorage.getItem('addresses')) || [];
+    const updatedAddresses = [...storedAddresses, newAddress];
+    localStorage.setItem('addresses', JSON.stringify(updatedAddresses));
+  };
+
+  return <AddressForm addAddress={addAddress} />;
 }
 
 export default App;
