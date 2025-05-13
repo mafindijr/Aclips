@@ -3,3 +3,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe998; /* Light yellow background */
+  color: #57370d; /* Dark brown text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #57370d;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

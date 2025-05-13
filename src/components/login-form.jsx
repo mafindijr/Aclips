@@ -5,55 +5,50 @@ function LoginForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate successful login
-    localStorage.setItem('isAuthenticated', 'true'); // Set isAuthenticated in localStorage
+    localStorage.setItem('isAuthenticated', 'true');
     alert('Login successful!');
-    navigate('/'); // Navigate to the dashboard
+    navigate('/');
   };
 
   return (
-    <div className="bg-secondary text-primary p-6 rounded shadow-lg">
-      <h1 className="text-3xl font-bold">Welcome</h1>
-      <button className="bg-primary text-white px-4 py-2 rounded hover:bg-opacity-90">
+    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-xl shadow-xl max-w-md mx-auto">
+      <h1 className="text-4xl font-bold mb-4 text-center text-gray-800">Welcome</h1>
+      <button className="w-full mb-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
         Get Started
       </button>
-      <form onSubmit={handleSubmit} className="p-6 border rounded max-w-md mx-auto bg-secondary shadow-lg">
-        <h2 className="text-2xl font-bold mb-6 text-primary text-center">Login</h2>
-        <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-primary">
-            Email
-          </label>
+      <form onSubmit={handleSubmit} className="space-y-6 p-6 bg-white rounded-xl shadow-md">
+        <h2 className="text-2xl font-semibold text-center text-gray-800">Login</h2>
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
           <input
             type="email"
             id="email"
-            className="w-full p-2 border border-primary rounded bg-white text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+            className="w-full mt-2 p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
             placeholder="Enter your email"
             required
           />
         </div>
-        <div className="mb-4">
-          <label htmlFor="password" className="block text-sm font-medium text-primary">
-            Password
-          </label>
+        <div>
+          <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
           <input
             type="password"
             id="password"
-            className="w-full p-2 border border-primary rounded bg-white text-primary focus:outline-none focus:ring-2 focus:ring-primary"
+            className="w-full mt-2 p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
             placeholder="Enter your password"
             required
           />
         </div>
-        <div className="flex justify-between mb-4">
+        <div className="flex justify-between gap-4 mt-6">
           <button
             type="submit"
-            className="px-4 py-2 bg-primary text-white rounded hover:bg-[#3e290a] transition"
+            className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
           >
             Login
           </button>
           <button
             type="button"
-            onClick={() => navigate('/signup')} // Navigate to the Sign Up page
-            className="px-4 py-2 bg-secondary text-primary border border-primary rounded hover:bg-primary hover:text-white transition"
+            onClick={() => navigate('/signup')}
+            className="w-full px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-300"
           >
             Sign Up
           </button>
