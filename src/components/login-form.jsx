@@ -48,7 +48,7 @@ function LoginForm() {
           <button
             type="button"
             onClick={() => navigate('/signup')}
-            className="w-full px-6 py-3 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition duration-300"
+          className='p-4 m-4 bg-red-600'
           >
             Sign Up
           </button>
