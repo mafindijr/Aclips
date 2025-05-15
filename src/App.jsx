@@ -9,7 +9,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Protected Route for Dashboard */}
         <Route
           path="/"
           element={
@@ -18,7 +17,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-        {/* Protected Route for Add Address Form */}
         <Route
           path="/add-address"
           element={
@@ -27,9 +25,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        {/* Public Route for Login */}
         <Route path="/login" element={<LoginForm />} />
-        {/* Public Route for Sign Up */}
         <Route path="/signup" element={<SignUpForm />} />
       </Routes>
     </Router>
