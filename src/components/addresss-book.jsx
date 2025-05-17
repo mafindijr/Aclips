@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Copy, Trash, Plus } from 'lucide-react';
+import "../../styles/address-book.css";
 
 const AddressCard = ({ label, address, onDelete }) => (
   <div>
@@ -51,14 +52,14 @@ const CryptoAddressBook = () => {
   };
 
   return (
-    <div>
+    <div className='address-book-wrapper'>
       <div>
         <h1>Crypto Address Book</h1>
-        <button onClick={handleLogout}>
+        <button className='logout-btn' onClick={handleLogout}>
           Logout
         </button>
       </div>
-      <button onClick={() => navigate('/add-address')}>
+      <button className='add-address-btn' onClick={() => navigate('/add-address')}>
         <Plus />
         Add Address
       </button>
