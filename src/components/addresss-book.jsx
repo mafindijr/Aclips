@@ -54,7 +54,7 @@ const CryptoAddressBook = () => {
   return (
     <div className='address-book-wrapper'>
       <div>
-        <h1>Crypto Address Book</h1>
+        <h1 className='head-note'>Crypto Address Book</h1>
         <button className='logout-btn' onClick={handleLogout}>
           Logout
         </button>
