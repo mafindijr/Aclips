@@ -6,11 +6,11 @@ import "../../styles/address-book.css";
 const AddressCard = ({ label, address, onDelete }) => (
   <div className='address-card'>
     <div>
-      <div>
+      <div className='card-data'>
         <h3>{label}</h3>
         <p>{address}</p>
       </div>
-      <div>
+      <div className='card-btn-wrapper'>
         <button
           onClick={() => {
             navigator.clipboard.writeText(address);
@@ -53,7 +53,7 @@ const CryptoAddressBook = () => {
 
   return (
     <div className='address-book-wrapper'>
-      <div>
+      <div className='logout-btn-wrapper'>
         <h1 className='head-note'>Crypto Address Book</h1>
         <button className='logout-btn' onClick={handleLogout}>
           Logout
@@ -63,7 +63,7 @@ const CryptoAddressBook = () => {
         <Plus />
         Add Address
       </button>
-      <div>
+      <div className='address-card-grid'>
         {addresses.map((addr, index) => (
           <AddressCard
             key={index}
