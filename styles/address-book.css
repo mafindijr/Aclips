@@ -1,27 +1,23 @@
-body {
-    display: grid;
-    place-items: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
 
 .address-book-wrapper {
-    width: 800px;
+    width: 1200px;
     height: 100vh;
+    background-color: #f3e9e9;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     padding: 0 50px;
+    margin-top: 0px;
+    
 }
 
 .logout-btn {
-    margin: 20px 0;
+    margin-top: 20px 0;
     padding: 10px 30px;
     background-color: red;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .add-address-btn {
@@ -32,10 +28,44 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.address-book-wrapper h1 {
+.logout-btn-wrapper h1.head-note {
     font-size: 20px;
     font-weight: bold;
-    margin: 50px;
+    padding: 20px;
+}
+
+.address-card {
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-btn-wrapper {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.card-data {
+    display: block;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-data p {
+
+    margin-top: 10px;
+}
+
+.address-card-grid {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
 }
