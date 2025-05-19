@@ -4,7 +4,7 @@ import { Copy, Trash, Plus } from 'lucide-react';
 import "../../styles/address-book.css";
 
 const AddressCard = ({ label, address, onDelete }) => (
-  <div>
+  <div className='address-card'>
     <div>
       <div>
         <h3>{label}</h3>

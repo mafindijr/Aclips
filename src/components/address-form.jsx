@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import "../../styles/address-form.css";
 
 function AddressForm({ addAddress }) {
   const [name, setName] = useState('');
@@ -17,7 +18,9 @@ function AddressForm({ addAddress }) {
   };
 
   return (
+    <div className='form-wrapper'>
     <form onSubmit={handleSubmit}>
+      <div className='form-box'>
       <h2>Add New Address</h2>
       <div>
         <label htmlFor="name">Address Name</label>
@@ -40,12 +43,14 @@ function AddressForm({ addAddress }) {
         />
       </div>
       <div>
-        <button type="submit">Submit</button>
-        <button type="button" onClick={() => navigate('/')}>
+        <button className='submit-btn' type="submit">Submit</button>
+        <button className='cancel-btn' type="button" onClick={() => navigate('/')}>
           Cancel
         </button>
       </div>
+      </div>
     </form>
+    </div>
   );
 }
 
