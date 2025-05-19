@@ -1,0 +1,56 @@
+.form-wrapper {
+    width: 100vw;
+    display: flex;
+    position: relative;
+    border: 1px solid green;
+} 
+
+.form-box {
+
+    width: 800px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.cancel-btn {
+    padding: 10px 30px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 10px 30px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+h2 {
+    margin: 10px 20px;
+}
+
+input {
+
+    margin: 10px 20px;
+    padding: 10px 0px;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+label {
+    margin: 10px 20px;
+    padding: 10px 0px;
+    font-size: 15px;
+}
