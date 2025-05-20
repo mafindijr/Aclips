@@ -19,8 +19,8 @@ function AddressForm({ addAddress }) {
 
   return (
     <div className='form-wrapper'>
-    <form onSubmit={handleSubmit}>
-      <div className='form-box'>
+    <form className='form-box' onSubmit={handleSubmit}>
+      
       <h2>Add New Address</h2>
       <div>
         <label htmlFor="name">Address Name</label>
@@ -33,7 +33,7 @@ function AddressForm({ addAddress }) {
         />
       </div>
       <div>
-        <label htmlFor="address">Address</label>
+        <label htmlFor="address">Wallet Address</label>
         <input
           type="text"
           id="address"
@@ -48,7 +48,7 @@ function AddressForm({ addAddress }) {
           Cancel
         </button>
       </div>
-      </div>
+      
     </form>
     </div>
   );
