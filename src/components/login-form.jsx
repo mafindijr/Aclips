@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import "../../styles/login-form.css";
 
 function LoginForm() {
   const navigate = useNavigate();
@@ -11,11 +12,12 @@ function LoginForm() {
   };
 
   return (
-    <div>
-      <h1>Welcome</h1>
-      <button>Get Started</button>
+    <div className='form-container'>
+
+      <center><h1>Welcome</h1></center>
+    
       <form onSubmit={handleSubmit}>
-        <h2>Login</h2>
+        <center><h2>Login</h2></center>
         <div>
           <label htmlFor="email">Email</label>
           <input
@@ -34,7 +36,7 @@ function LoginForm() {
             required
           />
         </div>
-        <div>
+        <div className='login-btn-wrapper'>
           <button type="submit">Login</button>
           <button type="button" onClick={() => navigate('/signup')}>
             Sign Up
