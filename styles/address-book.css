@@ -6,6 +6,8 @@
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     padding: 0 50px;
     margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -67,5 +69,5 @@
 
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 30px;
+    gap: 30px;
 }
