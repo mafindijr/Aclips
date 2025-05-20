@@ -1,0 +1,19 @@
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+.form-container {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+}
+
+.login-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
