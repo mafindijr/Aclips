@@ -37,8 +37,8 @@ function LoginForm() {
           />
         </div>
         <div className='login-btn-wrapper'>
-          <button type="submit">Login</button>
-          <button type="button" onClick={() => navigate('/signup')}>
+          <button className='login-btn' type="submit">Login</button>
+          <button className='sign-up-btn' type="button" onClick={() => navigate('/signup')}>
             Sign Up
           </button>
         </div>
