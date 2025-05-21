@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import "../../styles/sign-up-form.css";
 
 function SignUpForm() {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ function SignUpForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='sign-up-form' onSubmit={handleSubmit}>
       <h2>Sign Up</h2>
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
@@ -42,12 +43,14 @@ function SignUpForm() {
       <div>
         <button
           type="submit"
+          className='sign-up-btn1'
         >
           Sign Up
         </button>
         <button
           type="button"
           onClick={() => navigate('/login')}
+          className='login-btn1'
         >
           Cancel
         </button>
