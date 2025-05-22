@@ -1,13 +1,15 @@
 
 .address-book-wrapper {
-    width: 1200px;
+    width: 100vw;
+    padding: 0 50px;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: #f3e9e9;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    padding: 0 50px;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     
 }
 
@@ -70,4 +72,12 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 30px;
+}
+
+@media (max-width: 680) {
+
+}
+
+@media (max-width: 375) {
+
 }
