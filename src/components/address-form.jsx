@@ -21,7 +21,7 @@ function AddressForm({ addAddress }) {
     <div className='form-wrapper'>
     <form className='form-box' onSubmit={handleSubmit}>
       
-      <h2>Add New Address</h2>
+      <center><h2>Add New Address</h2></center>
       <div>
         <label htmlFor="name">Address Name</label>
         <input
