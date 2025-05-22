@@ -12,7 +12,7 @@ function SignUpForm() {
 
   return (
     <form className='sign-up-form' onSubmit={handleSubmit}>
-      <h2>Sign Up</h2>
+      <center><h2>Sign Up</h2></center>
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
         <input
