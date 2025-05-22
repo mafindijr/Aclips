@@ -6,7 +6,9 @@
 } 
 
 .form-box {
-    width: 800px;
+    width: 650px;
+    padding: 20px;
+    background-color: #f3e9e9;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
     margin-right: auto;
     margin-left: auto;
@@ -20,6 +22,11 @@
     
     
     
+}
+
+.form-box h2 {
+
+    color: #007BFF;
 }
 
 .cancel-btn {
@@ -61,4 +68,12 @@ label {
     margin: 10px;
     padding: 10px 0px;
     font-size: 15px;
+}
+
+@media (max-width: 680) {
+
+}
+
+@media (max-width: 375) {
+
 }
