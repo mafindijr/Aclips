@@ -5,11 +5,11 @@ export default function LandingPage () {
 
 
     return (
-        <div className="landing-page" style={{backgroundImage: url('https://pikbest.com//backgrounds/secure-multi-currency-digital-wallets-for-cryptocurrency-and-online-payments_11711910.html')}}>
+        <div className="landing-page" style={{backgroundImage: "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80')"}}>
 
             <div>
                 
             </div>
         </div>
     );
-} 
+}
