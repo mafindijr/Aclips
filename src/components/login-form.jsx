@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import "../../styles/login-form.css";
-import LandingPage from './landing-page';
 
 function LoginForm() {
   const navigate = useNavigate();
@@ -14,8 +13,6 @@ function LoginForm() {
 
   return (
     <div className='form-container'>
-
-      <LandingPage />
 
       <center><h1>Welcome</h1></center>
     
