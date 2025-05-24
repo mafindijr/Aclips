@@ -1,15 +1,14 @@
 import {useState} from 'react';
+import "../../styles/landing-page";
 
 
 export default function LandingPage () {
 
 
     return (
-        <div className="landing-page" style={{backgroundImage: "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80')"}}>
+        <div className='landing-page'>
 
-            <div>
-                
-            </div>
+        
         </div>
     );
-}
+} 
