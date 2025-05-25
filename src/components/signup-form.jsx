@@ -52,7 +52,7 @@ function SignUpForm() {
           onClick={() => navigate('/login')}
           className='login-btn1'
         >
-          Cancel
+          Back
         </button>
       </div>
     </form>
