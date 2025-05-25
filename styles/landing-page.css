@@ -1,0 +1,6 @@
+.landing-page {
+    background-image: url('/public/showcase.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
