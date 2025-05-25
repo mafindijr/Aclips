@@ -43,9 +43,9 @@ function AddressForm({ addAddress }) {
         />
       </div>
       <div>
-        <button className='submit-btn' type="submit">Submit</button>
+        <button className='submit-btn' type="submit">Add Wallet</button>
         <button className='cancel-btn' type="button" onClick={() => navigate('/')}>
-          Cancel
+          Back
         </button>
       </div>
       
