@@ -4,6 +4,7 @@ import AddressForm from './components/address-form';
 import LoginForm from './components/login-form';
 import SignUpForm from './components/signup-form';
 import ProtectedRoute from './components/protected-route';
+import LandingPage from './components/landing-page';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           path="/add-address"
           element={
             <ProtectedRoute>
+              <LandingPage />
               <AddressFormWrapper />
             </ProtectedRoute>
           }
