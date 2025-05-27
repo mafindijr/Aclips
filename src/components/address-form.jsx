@@ -13,7 +13,7 @@ function AddressForm({ addAddress }) {
       addAddress({ name, address });
       setName('');
       setAddress('');
-      navigate('/');
+      navigate('/address-book');
     }
   };
 
@@ -44,7 +44,7 @@ function AddressForm({ addAddress }) {
       </div>
       <div>
         <button className='submit-btn' type="submit">Add Wallet</button>
-        <button className='cancel-btn' type="button" onClick={() => navigate('/')}>
+        <button className='cancel-btn' type="button" onClick={() => navigate('/address-book')}>
           Back
         </button>
       </div>
