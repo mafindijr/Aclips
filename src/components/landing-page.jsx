@@ -1,9 +1,15 @@
-import {useState} from 'react';
+import { useNavigate } from "react-router-dom";
 import "../../styles/landing-page.css";
 
 
 export default function LandingPage () {
 
+    const navigate = useNavigate();
+
+    function handleChange (e) {
+        e.preventDefault();
+        navigate('/login')
+    }
 
     return (
         <div className='landing-page'>
@@ -18,7 +24,7 @@ export default function LandingPage () {
               </div>
 
              <div>
-                <button>Get Started</button>
+                <button onClick={handleChange}>Get Started</button>
                 <button>Connect Wallet</button>
             </div>
         
