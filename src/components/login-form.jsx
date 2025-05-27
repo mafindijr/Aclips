@@ -8,7 +8,7 @@ function LoginForm() {
     e.preventDefault();
     localStorage.setItem('isAuthenticated', 'true');
     alert('Login successful!');
-    navigate('/');
+    navigate('/address-book');
   };
 
   return (
