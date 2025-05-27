@@ -19,7 +19,7 @@ function App() {
           }
         />
         <Route
-          path="/"
+          path="/address-book"
           element={
             <ProtectedRoute>
               <CryptoAddressBook />
