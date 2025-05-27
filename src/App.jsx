@@ -10,6 +10,14 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route 
+          path='/'
+          element={
+            <ProtectedRoute>
+              <LandingPage />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="/"
           element={
@@ -22,7 +30,6 @@ function App() {
           path="/add-address"
           element={
             <ProtectedRoute>
-              <LandingPage />
               <AddressFormWrapper />
             </ProtectedRoute>
           }
