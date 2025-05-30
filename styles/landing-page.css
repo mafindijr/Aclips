@@ -27,3 +27,23 @@
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
+
+.get-start-btn {
+    
+    background-color: darkblue;
+    border: none;
+    color: gainsboro;
+    padding: 12px 35px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.connect-btn {
+
+    border: 1px solid #f26522;
+    background: transparent;
+    color: #f26522;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 8px;
+}
