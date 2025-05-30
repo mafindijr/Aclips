@@ -13,6 +13,7 @@ export default function LandingPage () {
 
     return (
         <div className='landing-page'>
+            <div className="overlay"></div>
             <header>
                 
             </header>
@@ -24,8 +25,8 @@ export default function LandingPage () {
               </div>
 
              <div>
-                <button onClick={handleChange}>Get Started</button>
-                <button>Connect Wallet</button>
+                <button className="get-start-btn" onClick={handleChange}>Get Started</button>
+                <button className="connect-btn">Connect Wallet</button>
             </div>
         
             </div>
