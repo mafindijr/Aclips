@@ -1,6 +1,7 @@
 .landing-page {
     height: 100vh;
     background-image: url('/showcase.jpg');
+    position: relative;
     background-size: cover;
     background-position: center;
     color: white;
@@ -8,12 +9,30 @@
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
+    z-index: 0;
+}
+
+.overlay {
+
+    background: rgba(0, 0, 0, 0.589);
+    inset: 0;
+    z-index: 0;
+    position: absolute;
+
+}
+
+.header-section {
+    z-index: 1000;
+    background-color: lightgrey;
+    position: fixed;
+    height: 50px;
 }
 
 .hero-content {
+    z-index: 1000;
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(2, 2, 2, 0.692);
     border-radius: 10px;
     text-indent: 5px;
 }
