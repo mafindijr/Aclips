@@ -14,7 +14,9 @@ export default function LandingPage () {
     return (
         <div className='landing-page'>
             <div className="overlay"></div>
-            <header>
+            <header className="header-section">
+
+                
                 
             </header>
 
