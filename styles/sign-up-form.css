@@ -1,0 +1,83 @@
+.sign-up-form {
+    background-color: #f3e9e9;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.sign-up-btn1 {
+    
+    padding: 10px 30px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sign-up-form h2 {
+    color: #007BFF;
+}
+
+.login-btn1 {
+    
+    padding: 10px 30px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sign-up-form input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+    .sign-up-form {
+        width: 80vw;
+        max-width: 500px;
+        padding: 20px 10vw;
+    }
+}
+
+@media (max-width: 680px) {
+    .sign-up-form {
+        width: 98vw;
+        max-width: 350px;
+        padding: 10px 2vw;
+    }
+    .sign-up-btn1, .login-btn1 {
+        width: 100%;
+        margin: 8px 0;
+        font-size: 15px;
+        padding: 10px 0;
+    }
+    .sign-up-form h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 360px) {
+    .sign-up-form {
+        padding: 5px 1vw;
+        max-width: 250px;
+    }
+    .sign-up-btn1, .login-btn1 {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    .sign-up-form h2 {
+        font-size: 1em;
+    }
+}

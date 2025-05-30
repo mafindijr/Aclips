@@ -1,0 +1,126 @@
+.address-book-wrapper {
+    width: 100vw;
+    padding: 0 50px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f3e9e9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    overflow: scroll;
+}
+
+.logout-btn {
+    margin-top: 20px 0;
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-address-btn {
+    margin: 20px 0;
+    padding: 10px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-btn-wrapper h1.head-note {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.address-card {
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-btn-wrapper {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.card-data {
+    display: block;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-data p {
+    margin-top: 10px;
+}
+
+.address-card-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+    .address-book-wrapper {
+        padding: 0 20px;
+    }
+    .address-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .address-card {
+        padding: 16px;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 680px) {
+    .address-book-wrapper {
+        padding: 0 5px;
+    }
+    .address-card-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .address-card {
+        padding: 12px;
+    }
+    .logout-btn-wrapper h1.head-note {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .logout-btn,
+    .add-address-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .address-book-wrapper {
+        padding: 0 2px;
+    }
+    .address-card {
+        padding: 8px;
+    }
+    .logout-btn-wrapper h1.head-note {
+        font-size: 14px;
+        padding: 6px;
+    }
+    .logout-btn,
+    .add-address-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
